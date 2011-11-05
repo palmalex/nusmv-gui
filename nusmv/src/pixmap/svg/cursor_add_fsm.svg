@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3641"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="cursor_add_fsm.svg">
+  <defs
+     id="defs3643">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3649" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective3604" />
+    <inkscape:perspective
+       id="perspective10"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3108"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4100"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path4071"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4106"
+       style="overflow:visible">
+      <path
+         id="path4108"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1615999"
+     inkscape:cx="280.42118"
+     inkscape:cy="614.68413"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1276"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3646">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:none;stroke-opacity:1"
+       id="rect3651"
+       width="198.92674"
+       height="198.92673"
+       x="180.95781"
+       y="338.21469"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.89983105999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 223.90193,347.70824 c 0,63.55929 0,63.55929 0,63.55929"
+       id="path4181"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.89983105999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:93.59594703999999865, 3.89983112999999992;stroke-dashoffset:0"
+       d="m 191.37563,380.09665 c 63.09987,0 63.6735,0 63.6735,0"
+       id="path4183"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#616161;fill-opacity:1;stroke:#000000;stroke-width:1.00160515;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3665"
+       sodipodi:cx="638.59906"
+       sodipodi:cy="498.86279"
+       sodipodi:rx="77.363319"
+       sodipodi:ry="78.06662"
+       d="m 715.96238,498.86279 a 77.363319,78.06662 0 1 1 -154.72664,0 77.363319,78.06662 0 1 1 154.72664,0 z"
+       transform="matrix(0.4019586,0,0,0.39677611,21.396293,289.34433)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#616161;fill-opacity:1;stroke:#000000;stroke-width:1.00160515;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3665-0"
+       sodipodi:cx="638.59906"
+       sodipodi:cy="498.86279"
+       sodipodi:rx="77.363319"
+       sodipodi:ry="78.06662"
+       d="m 715.96238,498.86279 a 77.363319,78.06662 0 1 1 -154.72664,0 77.363319,78.06662 0 1 1 154.72664,0 z"
+       transform="matrix(0.4019586,0,0,0.39677611,83.840456,231.91812)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <rect
+       style="fill:none;stroke:none;stroke-width:0.40000001000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2816"
+       width="132.401"
+       height="131.88206"
+       x="239.22861"
+       y="391.15775"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       transform="matrix(0.40301436,0,0,0.40143477,215.33496,271.19805)"
+       sodipodi:type="arc"
+       style="fill:#d9f7a7;fill-opacity:1;stroke:#000000;stroke-width:0.99447125;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3594-3"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="386.64789"
+       sodipodi:rx="77.142853"
+       sodipodi:ry="77.142853"
+       d="m 375.71429,386.64789 a 77.142853,77.142853 0 1 1 -154.2857,0 77.142853,77.142853 0 1 1 154.2857,0 z"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d9f7a7;fill-opacity:1;stroke:#000000;stroke-width:0.99447125;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3594"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="386.64789"
+       sodipodi:rx="77.142853"
+       sodipodi:ry="77.142853"
+       d="m 375.71429,386.64789 a 77.142853,77.142853 0 1 1 -154.2857,0 77.142853,77.142853 0 1 1 154.2857,0 z"
+       transform="matrix(0.40301436,0,0,0.40143477,152.65294,328.64343)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <text
+       xml:space="preserve"
+       style="font-size:51.15112305px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+       x="249.27357"
+       y="517.56818"
+       id="text3636"
+       transform="scale(1.0288446,0.97196407)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9"><tspan
+         sodipodi:role="line"
+         id="tspan3638"
+         x="249.27357"
+         y="517.56818"
+         style="stroke-width:0.40000001">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:53.59479523px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Bitstream Vera Sans"
+       x="293.98923"
+       y="479.97516"
+       id="text3636-8"
+       transform="scale(1.0779962,0.92764709)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9"><tspan
+         sodipodi:role="line"
+         id="tspan3638-7"
+         x="293.98923"
+         y="479.97516"
+         style="stroke-width:0.40000001">B</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 248.62851,465.14873 c 10.43159,-39.16497 18.05468,-45.15961 40.12151,-52.75282 22.06683,-7.59321 25.27656,-8.79214 25.27656,-8.79214"
+       id="path3699"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 358.78161,448.30424 c -10.43159,39.16498 -18.05468,45.15961 -40.12151,52.75282 -22.06684,7.59321 -25.27656,8.79214 -25.27656,8.79214"
+       id="path3699-0"
+       inkscape:transform-center-x="109.78842"
+       inkscape:transform-center-y="79.752814"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/cursor_add_fsm.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+  </g>
+</svg>

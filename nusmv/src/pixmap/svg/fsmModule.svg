@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="fsmModule.svg"
+   inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+   inkscape:export-xdpi="9"
+   inkscape:export-ydpi="9">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path4077"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path4083"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4071"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3604"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3648"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3677"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4899"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-4"
+       style="overflow:visible">
+      <path
+         id="path4077-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.37344557"
+     inkscape:cx="372.04724"
+     inkscape:cy="526.18109"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="986"
+     inkscape:window-height="675"
+     inkscape:window-x="71"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="ombra">
+    <path
+       sodipodi:type="arc"
+       style="fill:#616161;fill-opacity:1;stroke:#665e5e;stroke-width:5;stroke-miterlimit:4;stroke-opacity:0.99404764;stroke-dasharray:none"
+       id="path3665"
+       sodipodi:cx="638.59906"
+       sodipodi:cy="498.86279"
+       sodipodi:rx="77.363319"
+       sodipodi:ry="78.06662"
+       d="m 715.96238,498.86279 a 77.363319,78.06662 0 1 1 -154.72664,0 77.363319,78.06662 0 1 1 154.72664,0 z"
+       transform="matrix(1.001853,0,0,0.99282735,-394.36,-79.541872)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#616161;fill-opacity:1;stroke:#665e5e;stroke-width:5;stroke-miterlimit:4;stroke-opacity:0.99404764;stroke-dasharray:none"
+       id="path3665-0"
+       sodipodi:cx="638.59906"
+       sodipodi:cy="498.86279"
+       sodipodi:rx="77.363319"
+       sodipodi:ry="78.06662"
+       d="m 715.96238,498.86279 a 77.363319,78.06662 0 1 1 -154.72664,0 77.363319,78.06662 0 1 1 154.72664,0 z"
+       transform="matrix(1.001853,0,0,0.99282735,-238.7224,-223.23578)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+  </g>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2816"
+       width="330"
+       height="330"
+       x="148.57143"
+       y="175.21933"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none"
+       id="path3592"
+       sodipodi:cx="251.42857"
+       sodipodi:cy="433.79074"
+       sodipodi:rx="72.857147"
+       sodipodi:ry="72.857147"
+       d="m 324.28572,433.79074 a 72.857147,72.857147 0 1 1 -145.71429,0 72.857147,72.857147 0 1 1 145.71429,0 z"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       transform="matrix(1.0044844,0,0,1.0044844,89.018232,-124.94815)"
+       sodipodi:type="arc"
+       style="fill:#d9f7a7;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:0.99404764000000001;stroke-dasharray:none"
+       id="path3594-3"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="386.64789"
+       sodipodi:rx="77.142853"
+       sodipodi:ry="77.142853"
+       d="m 375.71429,386.64789 a 77.142853,77.142853 0 1 1 -154.2857,0 77.142853,77.142853 0 1 1 154.2857,0 z"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d9f7a7;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:0.99404764000000001;stroke-dasharray:none"
+       id="path3594"
+       sodipodi:cx="298.57144"
+       sodipodi:cy="386.64789"
+       sodipodi:rx="77.142853"
+       sodipodi:ry="77.142853"
+       d="m 375.71429,386.64789 a 77.142853,77.142853 0 1 1 -154.2857,0 77.142853,77.142853 0 1 1 154.2857,0 z"
+       transform="matrix(1.0044844,0,0,1.0044844,-67.212217,18.793754)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3620"
+       style="font-size:64px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"><flowRegion
+         id="flowRegion3622"><rect
+           id="rect3624"
+           width="157.14285"
+           height="160"
+           x="157.14285"
+           y="332.36218"
+           style="font-size:64px" /></flowRegion><flowPara
+         id="flowPara3626">AAAaaaaaadsfsdfsdfsdfsfd</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3628"
+       style="fill:black;stroke:#000000;stroke-opacity:0.99404764;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:40px"><flowRegion
+         id="flowRegion3630"><rect
+           id="rect3632"
+           width="77.14286"
+           height="60"
+           x="188.57143"
+           y="380.93362"
+           style="stroke:#000000;stroke-opacity:0.99404764" /></flowRegion><flowPara
+         id="flowPara3634"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:127.74108887px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="186.52504"
+       y="467.43121"
+       id="text3636"
+       transform="scale(1.0268264,0.97387447)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9"><tspan
+         sodipodi:role="line"
+         id="tspan3638"
+         x="186.52504"
+         y="467.43121">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:133.84373474px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="318.07388"
+       y="334.13086"
+       id="text3636-8"
+       transform="scale(1.0758815,0.92947039)"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9"><tspan
+         sodipodi:role="line"
+         id="tspan3638-7"
+         x="318.07388"
+         y="334.13086">B</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 172,360.36218 c 26,-98 45,-113 100,-132 55,-19 63,-22 63,-22"
+       id="path3699"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="m 446.54872,318.21328 c -26,98.00001 -45,113.00001 -100,132.00001 -55,19 -63,22 -63,22"
+       id="path3699-0"
+       inkscape:transform-center-x="109.78842"
+       inkscape:transform-center-y="79.752814"
+       inkscape:export-filename="/home/silvia/workspace/NuSmvGUI/src/pixmap/fsm_module.png"
+       inkscape:export-xdpi="9"
+       inkscape:export-ydpi="9" />
+  </g>
+</svg>

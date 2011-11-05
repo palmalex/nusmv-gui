@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="washing_machine.svg"
+   inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+   inkscape:export-xdpi="67"
+   inkscape:export-ydpi="67">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3715"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3618"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3618-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3618-6"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4735"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-2"
+       style="overflow:visible">
+      <path
+         id="path3715-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective6294"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective6319"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-1"
+       style="overflow:visible">
+      <path
+         id="path3715-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective6347"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.40860457"
+     inkscape:cx="372.04724"
+     inkscape:cy="526.18109"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1276"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2816" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2818"
+       sodipodi:cx="160"
+       sodipodi:cy="272.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="60"
+       d="m 200,272.36218 a 40,60 0 1 1 -80,0 40,60 0 1 1 80,0 z"
+       transform="matrix(1.1302764,0,0,0.75351761,-23.187589,41.267941)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:2.71000123;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2820"
+       sodipodi:cx="140"
+       sodipodi:cy="203.79076"
+       sodipodi:rx="48.57143"
+       sodipodi:ry="34.285713"
+       d="m 188.57143,203.79076 a 48.57143,34.285713 0 1 1 -97.14286,0 48.57143,34.285713 0 1 1 97.14286,0 z"
+       transform="matrix(1.6406646,0,0,2.2614817,-58.042503,-213.29498)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.14070511px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="153.35081"
+       y="207.74532"
+       id="text3594"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3596"
+         x="153.35081"
+         y="207.74532">So</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.83794022px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="116.7514"
+       y="248.65056"
+       id="text3598"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3600"
+         x="116.7514"
+         y="248.65056">washing = F</tspan><tspan
+         sodipodi:role="line"
+         x="116.7514"
+         y="272.198"
+         id="tspan3608">start = F</tspan><tspan
+         sodipodi:role="line"
+         x="116.7514"
+         y="295.74542"
+         id="tspan3604">closed = F</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2818-3"
+       sodipodi:cx="160"
+       sodipodi:cy="272.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="60"
+       d="m 200,272.36218 a 40,60 0 1 1 -80,0 40,60 0 1 1 80,0 z"
+       transform="matrix(1.1302764,0,0,0.75351761,314.21149,45.771312)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:2.71000123;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2820-0"
+       sodipodi:cx="140"
+       sodipodi:cy="203.79076"
+       sodipodi:rx="48.57143"
+       sodipodi:ry="34.285713"
+       d="m 188.57143,203.79076 a 48.57143,34.285713 0 1 1 -97.14286,0 48.57143,34.285713 0 1 1 97.14286,0 z"
+       transform="matrix(1.6406646,0,0,2.2614817,279.35657,-208.79161)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="490.74988"
+       y="212.24869"
+       id="text3594-7"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3596-8"
+         x="490.74988"
+         y="212.24869">S1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.83794022px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="454.15048"
+       y="253.1539"
+       id="text3598-6"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3600-8"
+         x="454.15048"
+         y="253.1539">washing = F</tspan><tspan
+         sodipodi:role="line"
+         x="454.15048"
+         y="276.70132"
+         id="tspan3608-8">start = T</tspan><tspan
+         sodipodi:role="line"
+         x="454.15048"
+         y="300.24875"
+         id="tspan3604-4">closed = F</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2818-1"
+       sodipodi:cx="160"
+       sodipodi:cy="272.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="60"
+       d="m 200,272.36218 a 40,60 0 1 1 -80,0 40,60 0 1 1 80,0 z"
+       transform="matrix(1.1302764,0,0,0.75351761,-16.181288,314.98023)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:2.71000123;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2820-4"
+       sodipodi:cx="140"
+       sodipodi:cy="203.79076"
+       sodipodi:rx="48.57143"
+       sodipodi:ry="34.285713"
+       d="m 188.57143,203.79076 a 48.57143,34.285713 0 1 1 -97.14286,0 48.57143,34.285713 0 1 1 97.14286,0 z"
+       transform="matrix(1.6406646,0,0,2.2614817,-51.036208,60.417317)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.14070511px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="160.35712"
+       y="481.45761"
+       id="text3594-9"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3596-2"
+         x="160.35712"
+         y="481.45761">S2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.83794022px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="123.7577"
+       y="522.36285"
+       id="text3598-0"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3600-6"
+         x="123.7577"
+         y="522.36285">washing = F</tspan><tspan
+         sodipodi:role="line"
+         x="123.7577"
+         y="545.91028"
+         id="tspan3608-89">start = F</tspan><tspan
+         sodipodi:role="line"
+         x="123.7577"
+         y="569.4577"
+         id="tspan3604-2">closed = T</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2818-6"
+       sodipodi:cx="160"
+       sodipodi:cy="272.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="60"
+       d="m 200,272.36218 a 40,60 0 1 1 -80,0 40,60 0 1 1 80,0 z"
+       transform="matrix(1.1302764,0,0,0.75351761,314.21149,317.4276)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:2.71000123;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path2820-49"
+       sodipodi:cx="140"
+       sodipodi:cy="203.79076"
+       sodipodi:rx="48.57143"
+       sodipodi:ry="34.285713"
+       d="m 188.57143,203.79076 a 48.57143,34.285713 0 1 1 -97.14286,0 48.57143,34.285713 0 1 1 97.14286,0 z"
+       transform="matrix(1.6406646,0,0,2.2614817,279.35657,62.864675)"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:30.14070511px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="490.74991"
+       y="483.905"
+       id="text3594-5"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3596-0"
+         x="490.74991"
+         y="483.905">S3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.83794022px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="454.15048"
+       y="524.81018"
+       id="text3598-4"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan3600-87"
+         x="454.15048"
+         y="524.81018">washing = T</tspan><tspan
+         sodipodi:role="line"
+         x="454.15048"
+         y="548.3576"
+         id="tspan3608-1">start = T</tspan><tspan
+         sodipodi:role="line"
+         x="454.15048"
+         y="571.90503"
+         id="tspan3604-7">closed = T</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 227.60391,198.23567 c 107.68358,-41.60502 220.26186,-2.44736 220.26186,-2.44736"
+       id="path3701"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="305.91925"
+       y="163.97272"
+       id="text4151"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4153"
+         x="305.91925"
+         y="163.97272">start</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 230.05127,577.57552 c 115.02563,31.8156 215.36714,0 215.36714,0"
+       id="path4157"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Mend)"
+       id="path4529"
+       sodipodi:cx="360.98471"
+       sodipodi:cy="808.85046"
+       sodipodi:rx="69.749588"
+       sodipodi:ry="69.749588"
+       d="M 428.57466,826.07265 A 69.749588,69.749588 0 1 1 360.97667,739.10088"
+       sodipodi:start="0.24949486"
+       sodipodi:end="4.7122737"
+       transform="matrix(-0.13631182,0.86741607,0.83672621,0.12269436,-46.853094,35.08975)"
+       sodipodi:open="true"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="467.44461"
+       y="359.76102"
+       id="text4715"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4717"
+         x="467.44461"
+         y="359.76102">close</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="291.23511"
+       y="606.94379"
+       id="text4719"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4721"
+         x="291.23511"
+         y="606.94379">start</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="594.70697"
+       y="528.62842"
+       id="text4723"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4725"
+         x="594.70697"
+         y="528.62842">washing</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 453.4637,469.56778 c -115.02563,-31.8156 -215.36714,0 -215.36714,0"
+       id="path4157-2"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="293.68246"
+       y="484.57608"
+       id="text4755"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4757"
+         x="293.68246"
+         y="484.57608">finish</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-2);stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 156.63065,442.97106 C 129.70976,376.8925 151.73594,323.05072 151.73594,323.05072"
+       id="path5139"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="73.420616"
+       y="396.47131"
+       id="text5327"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan5329"
+         x="73.420616"
+         y="396.47131">open</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-2);stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 472.33931,315.70865 c -34.26296,70.97327 -7.34207,137.05182 -7.34207,137.05182"
+       id="path5352"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend-2)"
+       d="m 205.57773,320.60336 c 14.68412,66.07856 -7.34206,119.92034 -7.34206,119.92034"
+       id="path5540"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="214.95618"
+       y="381.31787"
+       id="text4715-2"
+       inkscape:export-filename="/home/silvia/Documenti/Università/TESI/Capitoli/Immagini/washing_machine.png"
+       inkscape:export-xdpi="67"
+       inkscape:export-ydpi="67"><tspan
+         sodipodi:role="line"
+         id="tspan4717-6"
+         x="214.95618"
+         y="381.31787">close</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6375"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:25;-inkscape-font-specification:Sans;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion6377"><rect
+           id="rect6379"
+           width="621.62787"
+           height="702.39056"
+           x="48.947079"
+           y="97.894157" /></flowRegion><flowPara
+         id="flowPara6381"></flowPara></flowRoot>  </g>
+</svg>
