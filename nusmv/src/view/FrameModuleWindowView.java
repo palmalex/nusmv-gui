@@ -103,6 +103,8 @@ public class FrameModuleWindowView extends ModuleWindowView
 	private QAction modify_formula;
 	private QAction remove_formula;
 	
+	private QAction preferences;
+	
 	/********************************************************************************
 	*                                                                               *
 	*  							PUBLIC FUNCTIONS DEFINITION	                        *
@@ -457,6 +459,10 @@ public class FrameModuleWindowView extends ModuleWindowView
 		open_model.setToolTip("Open model");
 		open_model.triggered.connect((FrameModule)module, "load()" );
 		
+		preferences = new QAction("Preferences", this);
+		preferences.setToolTip("Set up preferences");
+		preferences.triggered.connect((FrameModule)module, "preferences()");
+		
 		convert_model = new QAction("Import Stateflow Model", this);
 		convert_model.setIcon(new QIcon("src/pixmap/convert.png"));
 		convert_model.setToolTip("Import Stateflow Model");
@@ -491,6 +497,8 @@ public class FrameModuleWindowView extends ModuleWindowView
 		file_bar.addAction(new_model);
 		file_bar.addAction(open_model);
 		file_bar.addAction(convert_model);
+		file_bar.addAction(preferences);
+		
 		
 		draw_bar.addWidget(add_local_var);
 		if (module.getName().compareTo("main") != 0)
@@ -529,6 +537,7 @@ public class FrameModuleWindowView extends ModuleWindowView
 		file_menu.addAction(new_model);
 		file_menu.addAction(open_model);
 		file_menu.addAction(convert_model);
+		file_menu.addAction(preferences);
 		
 		model_menu.addAction(new QIcon("src/pixmap/local_var.png"), "Add local variable", add_local_var.pressed);
 		if (module.getName().compareTo("main") != 0)
@@ -995,6 +1004,8 @@ public class FrameModuleWindowView extends ModuleWindowView
 	{
 		new VerificationCommandsDialog(getModule(), model_name, model_path).exec();
 	}
+	
+
 	
 	
 	protected void specificationAdded(Specification spec)
