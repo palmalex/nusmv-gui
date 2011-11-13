@@ -33,6 +33,7 @@ public class FrameModule extends Module
 	public Signal0 to_load;
 	public Signal0 to_convert;
 	public Signal0 to_create_new;
+	public Signal0 to_preferences;
 	
 	/********************************************************************************
 	*                                                                               *
@@ -55,6 +56,7 @@ public class FrameModule extends Module
 		to_load = new Signal0();
 		to_convert = new Signal0();
 		to_create_new = new Signal0();
+		to_preferences = new Signal0();
 	}
 	
 	/**
@@ -74,6 +76,7 @@ public class FrameModule extends Module
 		to_load = new Signal0();
 		to_convert = new Signal0();
 		to_create_new = new Signal0();
+		to_preferences = new Signal0();
 	}
 	
 	/**
@@ -97,6 +100,7 @@ public class FrameModule extends Module
 		to_load = new Signal0();
 		to_convert = new Signal0();
 		to_create_new = new Signal0();
+		to_preferences = new Signal0();
 	}
 
 	/**
@@ -227,6 +231,10 @@ public class FrameModule extends Module
 	public void createNewModel()
 	{
 		to_create_new.emit();
+	}
+	
+	public void preferences(){
+		to_preferences.emit();
 	}
 	
 	/**

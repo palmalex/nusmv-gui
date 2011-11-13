@@ -7,18 +7,21 @@
 ********************************************************************************/
 package apps;
 
+import item.GraphicView;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.prefs.Preferences;
 
-import item.GraphicView;
 import model.FrameModule;
 import model.ModulesList;
 import translator.Error;
 import translator.StateflowModelReader;
+import util.WorkingTemp;
 import view.FrameModuleTreeView;
 import view.FrameModuleWindowView;
 import xml.SmvCreator;
@@ -36,6 +39,7 @@ import com.trolltech.qt.gui.QPrinterInfo;
 import dialog.CloseModifiedDialog;
 import dialog.CreateModelDialog;
 import dialog.ExitConformDialog;
+import dialog.ResultDialog;
 import dialog.StateflowConfirmConversion;
 import dialog.StateflowModelNoForm;
 import dialog.VerificationCommandsDialog;
@@ -48,8 +52,8 @@ public class MainApp
 	private boolean model_changed;
 	private boolean saveAs;
 	private String ultimatePath;
-	private final String nusmvPath="C:/Users/105050060/Dropbox/Tesi/NuSMV-2.5.3-i386-pc-mingw32/NuSMV-2.5.3-i386-pc-mingw32/bin/NuSMV.exe";
-	private final String debug_commandfile = "";
+	private  String nusmvPath;
+	
 
 	/********************************************************************************
 	*                                                                               *
@@ -62,6 +66,13 @@ public class MainApp
 	 */
 	public MainApp()
 	{
+		// Alessio Palmieri : change to make the preferences persistent
+		Preferences prefs = Preferences.userNodeForPackage(getClass());
+		nusmvPath = prefs.get("NUSMV", null);
+		System.out.println("path : " + nusmvPath);
+		if (nusmvPath == null || nusmvPath.length()==0) {
+			preferences();
+		}
 		FrameModule module_main = new FrameModule("main");
 		main_view = new FrameModuleWindowView(module_main);
 		main_view.showMaximized();
@@ -166,6 +177,18 @@ public class MainApp
 			}
 		}
 	}
+	
+	protected void preferences() {
+		nusmvPath = QFileDialog.getOpenFileName(main_view, "select the NUSMV exe", nusmvPath);
+		System.out.println("path : " + nusmvPath);
+		Preferences pref = Preferences.userNodeForPackage(getClass());
+		pref.put("NUSMV", nusmvPath);
+		
+		
+		
+		
+	}
+	
 	/**
 	 * Carica file *.mdl per convertirlo in modo da essere utilizzato NusmvGUI
 	 * @throws SimulinkModelBuildingException 
@@ -360,24 +383,15 @@ protected void convertStateflow() throws FileNotFoundException, SimulinkModelBui
 	 */
 	protected void run()
 	{
-		File output_file = new File(main_view.getModelName() + "_log.txt");
+		// Alessio Palmieri: change this code to manage temp directory
+		WorkingTemp wrk = WorkingTemp.getInstance();
+		File output_file = new File(wrk.createNewWorkingTemp(),main_view.getModelName() + "_log.txt");
  		output_file.setWritable(true);
  		
  		if(runNuSMV(output_file))
  		{
- 			try
-			{
-				 Desktop desktop = null;
-				 if (Desktop.isDesktopSupported()) 
-				 {
-					 desktop = Desktop.getDesktop();
-				 }
-				 desktop.open(output_file);
-			} 
-			catch (IOException ioe) 
-			{
-				ioe.printStackTrace();
-			}
+ 			QDialog dialog = new ResultDialog(null);
+ 			dialog.show();
  		}
 	}
 	
@@ -458,6 +472,7 @@ protected void convertStateflow() throws FileNotFoundException, SimulinkModelBui
 		ml.to_run.connect(this, "run()");
 		ml.to_print_all.connect(this, "printAll()");
 		ml.model_changed.connect(this, "modelChanged()");
+		ml.to_preferences.connect(this, "preferences()");
 		
 		module_main.to_save.connect(this, "save()");
 		module_main.to_save_as.connect(this, "saveAs()");
@@ -469,5 +484,6 @@ protected void convertStateflow() throws FileNotFoundException, SimulinkModelBui
 		module_main.to_close.connect(this, "close()");
 		module_main.to_print_all.connect(this, "printAll()");
 		module_main.model_changed.connect(this, "modelChanged()");
+		module_main.to_preferences.connect(this, "preferences()");
 	}
 }

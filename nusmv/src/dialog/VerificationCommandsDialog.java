@@ -11,6 +11,7 @@ import model.FormulaType;
 import model.FrameModule;
 import model.FrameModuleInstance;
 import model.Specification;
+import util.WorkingTemp;
 
 import com.trolltech.qt.core.Qt;
 import com.trolltech.qt.gui.QCheckBox;
@@ -202,7 +203,9 @@ public class VerificationCommandsDialog extends QDialog
 				
 				if (s.getType().compareTo(FormulaType.CTL) == 0)
 				{
-					ctl_list.addItem(s.getFormula() + " IN " + s.getParentModule().getName());
+					//ctl_list.addItem(s.getFormula() + " IN " + s.getParentModule().getName());
+					ctl_list.addItem(s.getFormula()); // + " IN " + s.getParentModule().getName());
+					//System.out.println(s.getFormula() + " IN " + s.getParentModule().getName() );
 				}
 				else
 				{
@@ -306,14 +309,19 @@ public class VerificationCommandsDialog extends QDialog
 	{
 		try
 		{
-			command_file = new File("command.txt");
+			WorkingTemp tmp = WorkingTemp.getInstance();
+			command_file = new File(tmp.getCurrentPath(),"command.txt");
+			System.out.println("command_file : " + command_file);
 			FileWriter writer = new FileWriter(command_file);
 			//Alessio Palmieri, insert the printer plugin to get XML output
 			writer.write("set default_trace_plugin 4\n");
 			printInputFile(writer);
 			writer.write("go\n");
 			
+			// check the specification
 			printCheckingSpecifications(writer);
+			
+			//simulate
 			printSimulateCommands(writer);
 			
 			
@@ -342,16 +350,17 @@ public class VerificationCommandsDialog extends QDialog
 	
 	private void printCheckingSpecifications(FileWriter w) throws IOException
 	{
+		WorkingTemp wrk = WorkingTemp.getInstance();
 		printCtlString(w);
 		printLtlString(w);
 		
 		if (check_fsm.isChecked())
 		{
-			w.write("check_fsm\n");
+			w.write("check_fsm -o "+ wrk.getCurrentPath() + System.getProperty("file.separator") +"check_fms.txt\n");
 		}
 		if (reachable_states.isChecked())
 		{
-			w.write("print_reachable_states\n");
+			w.write("print_reachable_states -o "+ wrk.getCurrentPath() + System.getProperty("file.separator") + "reachable_states.txt\n");
 		}
 	}
 	
@@ -363,41 +372,64 @@ public class VerificationCommandsDialog extends QDialog
 		if (print_state.isChecked())
 		{
 			w.write("print_current_state -v\n");
+			//current state output cannot be redirected.
 		}
 		w.write("simulate -r " + simulate_steps.displayText() + "\n");
-		w.write("show_traces -v\n");
+		w.write("show_traces -v");
+		w.write(" -o ");
+		w.write(WorkingTemp.getInstance().getCurrentPath());
+		w.write(System.getProperty("file.separator"));
+		w.write("simulation.xml\n");
+		}
+	
+	private void printSpecString(FileWriter w, String command, QGroupBox spec, QRadioButton select, QComboBox list) throws IOException{
+		
+		WorkingTemp wrk = WorkingTemp.getInstance();
+		if (spec.isChecked())
+		{
+			if (!select.isChecked()){
+				System.out.println("count() " + list.count());
+				for(int i=0; i<list.count();i++) {
+					w.write(command);
+					w.write(" -p \"");
+					w.write(list.itemText(i).trim());
+					w.write("\" -o ");
+					w.write(wrk.getCurrentPath()); 
+					w.write(System.getProperty("file.separator"));
+					w.write(command);
+					w.write("_");
+					w.write(new Integer(i).toString());
+					w.write(".xml\n");
+				}
+				w.write("\n");
+			} else {
+				w.write(command);
+				w.write(" -p \"");
+				w.write(list.currentText().trim());
+				w.write("\" - o");
+				w.write(wrk.getCurrentPath());
+				w.write(System.getProperty("file.separator"));
+				w.write(command);
+				w.write("_");
+				w.write(list.currentIndex());
+				w.write(".xml\n");
+			}
+		}
 	}
 	
 	private void printCtlString(FileWriter w) throws IOException
 	{
-		if (ctl_spec.isChecked())
-		{
-			w.write("check_ctlspec");
-			
-			if (ctl_select.isChecked())
-			{
-				w.write(" -p \"" + ctl_list.currentText() + "\"");
-			}
-			w.write("\n");
-		}
+		printSpecString(w, "check_ctlspec", ctl_spec, ctl_select, ctl_list);
 	}
 	
 	private void printLtlString(FileWriter w) throws IOException
 	{
-		if (ltl_spec.isChecked())
-		{
-			w.write("check_ltlspec");
-			
-			if (ltl_select.isChecked())
-			{
-				w.write(" -p \"" + ltl_list.currentText() + "\"");
-			}
-			w.write("\n");
-		}
+		printSpecString(w, "check_ltlspec", ltl_spec, ltl_select, ltl_list);
 	}
 	
 	private void printShowVarString(FileWriter w) throws IOException
 	{
+		WorkingTemp wrk = WorkingTemp.getInstance();
 		if (show_vars.isChecked())
 		{
 			w.write("show_vars");
@@ -414,6 +446,10 @@ public class VerificationCommandsDialog extends QDialog
 			{
 				w.write(" -s -i");
 			}
+			w.write(" -o ");
+			w.write(wrk.getCurrentPath());
+			w.write(System.getProperty("file.separator"));
+			w.write("show_vars.txt");
 			w.write("\n");
 		}
 	}

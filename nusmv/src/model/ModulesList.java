@@ -38,6 +38,7 @@ public class ModulesList extends QSignalEmitter
 	public Signal0				to_generate_smv;
 	public Signal0				model_changed;
 	public Signal0				to_close_all;
+	public Signal0				to_preferences;
 	
 	/********************************************************************************
 	*                                                                               *
@@ -68,6 +69,7 @@ public class ModulesList extends QSignalEmitter
 		this.to_generate_smv = new Signal0();
 		this.model_changed = new Signal0();
 		this.to_close_all = new Signal0();
+		this.to_preferences = new Signal0();
 	}
 	
 	/**
@@ -240,6 +242,8 @@ public class ModulesList extends QSignalEmitter
 			((FrameModule)m).to_load.connect(this.to_load);
 			((FrameModule)m).to_convert.connect(this.to_convert);
 			((FrameModule)m).to_create_new.connect(this.to_create_new);
+			((FrameModule)m).to_preferences.connect(this.to_preferences);
+			
 		}
 		to_close_all.connect(m.close_win);
 	}
@@ -259,6 +263,7 @@ public class ModulesList extends QSignalEmitter
 			((FrameModule)m).to_create_new.disconnect(this.to_create_new);
 			((FrameModule)m).to_run.disconnect(this.to_run);
 			((FrameModule)m).to_generate_smv.disconnect(this.to_generate_smv);
+			((FrameModule)m).to_preferences.disconnect(this.to_preferences);
 		}
 		to_close_all.disconnect(m.close_win);
 	}
