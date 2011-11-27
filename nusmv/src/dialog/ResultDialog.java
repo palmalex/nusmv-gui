@@ -14,6 +14,7 @@ import java.io.InputStreamReader;
 
 import util.WorkingTemp;
 import view.FrameModuleWindowView;
+import widget.TraceWidget;
 
 import com.trolltech.qt.core.QSignalMapper;
 import com.trolltech.qt.gui.QDialog;
@@ -21,7 +22,7 @@ import com.trolltech.qt.gui.QGridLayout;
 import com.trolltech.qt.gui.QGroupBox;
 import com.trolltech.qt.gui.QLabel;
 import com.trolltech.qt.gui.QPushButton;
-import com.trolltech.qt.gui.QTextBlock;
+import com.trolltech.qt.gui.QTextBrowser;
 import com.trolltech.qt.gui.QVBoxLayout;
 
 /**
@@ -41,7 +42,7 @@ public class ResultDialog extends QDialog {
 		
 	
 		setVisible(true);
-		setModal(true);
+		//setModal(true);
 	}
 	
 	private QGroupBox createTextView(String fileName, String title) {
@@ -54,7 +55,9 @@ public class ResultDialog extends QDialog {
 			if (!file.exists()) {
 				textViewBox = null;
 			} else {
-				QLabel text = new QLabel();
+				QTextBrowser text = new QTextBrowser();
+				
+				// change this to use QT file functionalities
 				StringBuffer fileData = new StringBuffer(1000);
 				BufferedReader br = new BufferedReader(new FileReader(file));
 				char[] buffer = new char[1024];
@@ -221,8 +224,19 @@ public class ResultDialog extends QDialog {
 	
 	private void openDesktop(String filename) throws IOException {
 		System.out.println(filename);
-		if (Desktop.isDesktopSupported()){
-			Desktop.getDesktop().open(new File(wrk.getCurrentPath()+"/"+filename));
+		if (filename.startsWith("check_ctlspec") || filename.startsWith("check_ltlspec")) {
+			// clicked on the verification
+			System.out.println("show counter example");
+			TraceDialog td = new TraceDialog(this, wrk.getCurrentPath()+"/"+filename);
+			td.show();
+		} else {
+			if (filename.equals("simulation.xml")) {
+				System.out.println("show simulation");
+			} else {
+				if (Desktop.isDesktopSupported()){
+					Desktop.getDesktop().open(new File(wrk.getCurrentPath()+"/"+filename));
+				}
+			}
 		}
 	}
 }
