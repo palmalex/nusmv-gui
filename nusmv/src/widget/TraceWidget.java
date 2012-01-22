@@ -1,60 +1,178 @@
 package widget;
 
-import javax.swing.SwingWorker.StateValue;
+import java.util.Iterator;
 
-import view.StateGraphicView;
+import model.result.MainModuleResult;
+import model.result.ModuleIfc;
+import model.result.ModuleType;
+import model.result.StateResult;
+import model.result.VariableModuleResult;
+import view.FrameModuleWindowView;
 
-import com.trolltech.qt.core.QByteArray;
 import com.trolltech.qt.core.QFile;
 import com.trolltech.qt.core.QIODevice;
 import com.trolltech.qt.gui.QGridLayout;
-import com.trolltech.qt.gui.QLineEdit;
+import com.trolltech.qt.gui.QPushButton;
 import com.trolltech.qt.gui.QTextBrowser;
 import com.trolltech.qt.gui.QWidget;
-import com.trolltech.qt.svg.QGraphicsSvgItem;
-import com.trolltech.qt.svg.QSvgWidget;
-import com.trolltech.qt.xmlpatterns.QXmlQuery;
+import com.trolltech.qt.xml.QDomDocument;
+import com.trolltech.qt.xml.QDomElement;
+import com.trolltech.qt.xml.QDomNode;
+import com.trolltech.qt.xml.QDomNodeList;
 
 public class TraceWidget extends QWidget {
 	
 	private ResultStateView stateBrowser;
-	private QTextBrowser varBrowser;
-	private QLineEdit queryLine;
-	private String filename;
 	private int currentState=0;
+	private MainModuleResult frame;
+	private QDomDocument doc;
+	private FrameModuleWindowView main;
+	private ResultVarTreeWidget tree;
+	private String filename;
 	
-	public TraceWidget(QWidget parent, String filename) {
-		super(parent);
-		this.filename=filename;
+	private void print(ModuleIfc root, int level) {
+		String tab="";
+		for(int i=0;i<level;i++) {
+			tab+="\t";
+		}
+		System.out.println(tab+"name " + root.getName() + " " + root.getType());
 		
-		QGridLayout layout = new QGridLayout(this);
-		stateBrowser = new ResultStateView("pippo",29,7);
-		stateBrowser.setToolTip(tr("State diagram"));
-		varBrowser = new QTextBrowser(this);
-		varBrowser.setToolTip("variables");
-		queryLine = new QLineEdit(this);
-		queryLine.setText(tr(String.valueOf(currentState)));
-		queryLine.returnPressed.connect(this,"goToState()");
+		if (root.getType().equals(ModuleType.VARIABLE)) {
+			System.out.println(((VariableModuleResult) root).getValue());
+		}
+		Iterator<ModuleIfc> iterator=root.getChilds();
+		++level;
+		while(iterator.hasNext()) {
+			print(iterator.next(),level);
+		}
+	}
 	
+		
 	
-		layout.addWidget(stateBrowser,1,1);
-		layout.addWidget(varBrowser,1,2);
-		layout.addWidget(queryLine,2,1,1,2);
+	public TraceWidget(FrameModuleWindowView main, String filename) {
+		super(main);
+		this.filename=filename;
+		int loop;
+		System.out.println("filename " + filename);
+		
+		frame = new MainModuleResult(main.getModule());
+		print(frame,0);
+		
+		
+		doc = new QDomDocument();
+		
+		
+		String result="";
 		QFile file = new QFile(filename);
 		if (file.open(QIODevice.OpenModeFlag.ReadOnly)) {
-			varBrowser.setPlainText(file.readAll().toString());
-		} else {
-			varBrowser.setPlainText(tr("Error opening file : ") + filename);
+			result = file.readAll().toString().replaceAll("--.*\\r\\n", "");
+		} 
+		
+		if(doc.setContent(result).success) {
+			file.close();
 		}
+		
+		QDomNodeList loopNL = doc.elementsByTagName("loops");
+	    QDomElement  loopEl = loopNL.at(0).toElement();	
+		
+	    System.out.println("loops  : >" + loopEl.text()  + "<>" + loopEl.nodeName());
+		
+	    if (loopEl.text().trim().length()==0) {
+	    	loop = 0;
+	    } else {
+	    	loop = Integer.valueOf(loopEl.text().trim());
+	    }
+		QGridLayout layout = new QGridLayout(this);
+		
+		QDomNodeList stateNL = doc.elementsByTagName("state");
+		int state = stateNL.count();
+		
+		stateBrowser = new ResultStateView(state,loop);
+		stateBrowser.setToolTip(tr("State diagram"));
+		stateBrowser.STATECHANGE.connect(this, "goToState()");
+			
+	
+		layout.addWidget(stateBrowser,1,1);
+		
+		tree = new ResultVarTreeWidget(this, frame);
+	
+		layout.addWidget(tree,1,2);
+		tree.show();
+	
+		
+		print(frame,0);
+		QGridLayout stateMover = new QGridLayout();
+		tree.refresh();
+		QPushButton next = new QPushButton("Next");
+		next.clicked.connect(stateBrowser, "next()");
+		QPushButton prev = new QPushButton("Prev");
+		prev.clicked.connect(stateBrowser,"prev()");
+		stateMover.addWidget(prev,1,1);
+		stateMover.addWidget(next,1,2);
+		layout.addLayout(stateMover,2,1,1,2);
+		
 		
 		goToState();
 		
 	}
 	
 	public void goToState(){
-		//varBrowser.clear();
+		currentState = stateBrowser.getCurrentNode();
+		
+		QDomNodeList nodeL = doc.elementsByTagName("node");
+		QDomElement node = nodeL.at(currentState-1).toElement();
+		QDomElement state = node.firstChildElement("state");
+		QDomNodeList variableL = state.elementsByTagName("value");
+		int varCount = variableL.count();
+		
+		for(int i=0; i<varCount; i++) {
+			String levels = variableL.at(i).toElement().attribute("variable");
+			String value = variableL.at(i).toElement().text();
+			
+			String[] path = levels.split("\\.");
+			
+			ModuleIfc root = frame;
+			int j=0;
+			for(;j<path.length-1;j++){
+				root = root.getChild(path[j]);
+				if (root!=null) {
+					System.out.println("j " + j);
+					System.out.println(path[j]);
+					System.out.println(root.getName());
+				} 
+			}
+			// 
+			root = root.getChild(path[j]);
+
+				if (root!=null) {
+					System.out.println("j " + j);
+					System.out.println(path[j]);
+					System.out.println(root.getName());
+					switch (root.getType()) {
+					case VARIABLE:
+						((VariableModuleResult) root).setValue(value);
+						break;
+					case STATE:
+						((StateResult) root).setValue(value);
+						break;
+					default:
+						break;
+					}
+					
+				} else {
+					System.out.println("j " + j);
+					System.out.println(path[j]);
+				}
+			}
+		
+		tree.refresh();
+			
+		}
+		
+		
+		
 		
 		
 	}
 
-}
+

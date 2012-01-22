@@ -460,6 +460,7 @@ public class FrameModuleWindowView extends ModuleWindowView
 		open_model.triggered.connect((FrameModule)module, "load()" );
 		
 		preferences = new QAction("Preferences", this);
+		preferences.setIcon(new QIcon("src/pixmap/gear.gif"));
 		preferences.setToolTip("Set up preferences");
 		preferences.triggered.connect((FrameModule)module, "preferences()");
 		

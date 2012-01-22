@@ -25,4 +25,8 @@ public class Icon
 	{
 		return new QIcon(icon_path + "nusmv.gif");
 	}
+	
+	public static QIcon magnifier(){
+		return new QIcon(icon_path + "magnifier.png");
+	}
 }

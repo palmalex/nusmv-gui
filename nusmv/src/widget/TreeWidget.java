@@ -35,7 +35,7 @@ public class TreeWidget extends QTreeWidget
 		delete_item = new Signal1<QTreeWidgetItem>();
 		setHeaderHidden(true);
 		setColumnCount(2);
-		setColumnWidth(0, max_column_width);
+		setColumnWidth(0, max_column_width); 
 	}
 	
 	public QUndoStack getUndoStack()

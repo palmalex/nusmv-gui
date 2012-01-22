@@ -34,7 +34,12 @@ public class ResultStateView extends QGraphicsView {
 	private static final QPen QPEN_EDGE = new QPen(QColor.black, 1, Qt.PenStyle.SolidLine, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin);
 	private static QRadialGradient GRADIENT_SUNKEN;
 	private static QRadialGradient GRADIENT_NORMAL;
+	private static QRadialGradient CURRENT_NODE_NORMAL;
+	private static QRadialGradient CURRENT_NODE_SUNKEN;
 	private static QPainterPath NODE_SHAPE;
+	
+	public Signal0 STATECHANGE = new Signal0();
+	
 	
 
 	static {
@@ -47,13 +52,23 @@ public class ResultStateView extends QGraphicsView {
 		GRADIENT_SUNKEN.setColorAt(1, new QColor(QColor.yellow).lighter(120));
 		GRADIENT_SUNKEN.setColorAt(0, new QColor(QColor.darkYellow).lighter(120));
 		
+		CURRENT_NODE_SUNKEN = new QRadialGradient(-3, -3, 10);
+		CURRENT_NODE_SUNKEN.setCenter(3, 3);
+		CURRENT_NODE_SUNKEN.setFocalPoint(3, 3);
+		CURRENT_NODE_SUNKEN.setColorAt(1, new QColor(QColor.red).lighter(120));
+		CURRENT_NODE_SUNKEN.setColorAt(0, new QColor(QColor.darkRed).lighter(120));
+		
 		GRADIENT_NORMAL = new QRadialGradient(-3, -3, 10);
 		GRADIENT_NORMAL.setColorAt(0, QColor.yellow);
 		GRADIENT_NORMAL.setColorAt(1, QColor.darkYellow);
 		
+		CURRENT_NODE_NORMAL = new QRadialGradient(-3, -3, 10);
+		CURRENT_NODE_NORMAL.setColorAt(0, QColor.red);
+		CURRENT_NODE_NORMAL.setColorAt(1, QColor.darkRed);
+		
 	}
 	
-	public ResultStateView(String FileName, int stateNumber,int loop){
+	public ResultStateView(int stateNumber,int loop){
 		QGraphicsScene scene = new QGraphicsScene(this);
 		scene.setItemIndexMethod(QGraphicsScene.ItemIndexMethod.NoIndex);
 		
@@ -74,7 +89,7 @@ public class ResultStateView extends QGraphicsView {
 		Node prevNode=null;
 		Edge edge;
 		for(int i=0; i<max; i++) {
-			node = new Node(this);
+			node = new Node(this,i+1);
 			nodes.add(node);
 			node.setPos(0, i*50);
 			node.setToolTip("Status "  + String.valueOf(i+1));
@@ -88,7 +103,7 @@ public class ResultStateView extends QGraphicsView {
 		
 		if(loop!=0){
 			for(int i=max; i<stateNumber; i++) {
-				node = new Node(this);
+				node = new Node(this,i+1);
 				nodes.add(node);
 				node.setPos(100, (max-1)*50 - (i-max)*50);
 				node.setToolTip("Status " + String.valueOf(i+1));
@@ -100,19 +115,61 @@ public class ResultStateView extends QGraphicsView {
 				prevNode=node;
 			}
 			edge=new Edge(node,nodes.elementAt(loop-1));
-			nodes.get(currentNode);
 			scene.addItem(edge);		
-			
 		}
-		
+		setCurrentNode(1);
+	
 		
 		scale(0.8, 0.8);
 	}
 	
 	protected void wheelEvent(QWheelEvent event) {
 		System.out.println("wheel" + Math.pow(2, -event.delta()/240));
-		scaleView(Math.pow(2, -event.delta()/240));
+		scaleView(Math.pow(2, -event.delta()/240.00));
 	}
+	
+	public void setCurrentNode(int currentNode) {
+		Node oldCurrent = nodes.get(this.currentNode-1>0?this.currentNode-1:0);
+		oldCurrent.setCurrent(false);
+		Node current = nodes.get(currentNode-1);
+		current.setCurrent(true);
+		this.currentNode=currentNode;
+		update();
+		STATECHANGE.emit();
+	}
+	
+	public int getCurrentNode() {
+		return currentNode;
+	}
+	
+	public boolean hasNext() {
+		boolean ret = true;
+		if (currentNode==stateNumber & loop==0) {
+			ret = false;
+		}
+		return ret;
+	}
+	
+	public boolean hasPrev() {
+		return currentNode==1;
+	}
+	
+	public void next() {
+		if (currentNode<stateNumber) {
+			setCurrentNode(1+currentNode);
+		} else {
+			if (loop!=0) {
+				setCurrentNode(loop);
+			}
+		}
+	}
+	
+	public void prev() {
+		if (currentNode>1) {
+			setCurrentNode(currentNode-1);
+		}
+	}
+	
 	
 	private void scaleView(double scaleFactor) {
 		QMatrix m = matrix();
@@ -140,9 +197,12 @@ public class ResultStateView extends QGraphicsView {
 		private QPointF newPos;
 		private double adjust = 2;
 		private QRectF boundingRect = new QRectF(-10 - adjust, -10 - adjust, 23 + adjust, 23 + adjust);
+		private boolean current=false;
+		int nodeNumber;
 		
-		Node(ResultStateView graphWidget) {
+		Node(ResultStateView graphWidget, int nodeNumber) {
 			graph = graphWidget;
+			this.nodeNumber = nodeNumber;
 			setFlag(QGraphicsItem.GraphicsItemFlag.ItemIsMovable);
 			setZValue(1);
 			newPos = pos();
@@ -157,6 +217,11 @@ public class ResultStateView extends QGraphicsView {
 			return boundingRect;
 		}
 
+		public void setCurrent(boolean set) {
+			this.current = set;
+			update();
+		}
+		
 		@Override
 		public void paint(QPainter painter, QStyleOptionGraphicsItem option,
 				QWidget widget) {
@@ -164,11 +229,21 @@ public class ResultStateView extends QGraphicsView {
 			painter.setBrush(QColor.fromRgba(QColor.black.rgb() & 0x7fffffff));
 			painter.drawEllipse(-7, -7, 20, 20);
 			
+			
 			if ((option.state().isSet(QStyle.StateFlag.State_Sunken))) {
-				painter.setBrush(GRADIENT_SUNKEN);
+				if(!current) {
+					painter.setBrush(GRADIENT_SUNKEN);
+				} else {
+					painter.setBrush(CURRENT_NODE_SUNKEN);
+				}
 			} else {
-				painter.setBrush(GRADIENT_NORMAL);
+				if (!current) {
+					painter.setBrush(GRADIENT_NORMAL);
+				} else {
+					painter.setBrush(CURRENT_NODE_NORMAL);
+				}
 			}
+			
 			
 			painter.setPen(QPEN_BLACK);
 			painter.drawEllipse(-10, -10, 20, 20);
@@ -208,7 +283,9 @@ public class ResultStateView extends QGraphicsView {
 		public void mouseDoubleClickEvent(QGraphicsSceneMouseEvent event) {
 			// TODO trigger signal to send the selected status
 			System.out.println("double click");
+			graph.setCurrentNode(nodeNumber);
 			super.mouseDoubleClickEvent(event);
+			
 		}
 		
 		

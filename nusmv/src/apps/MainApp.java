@@ -385,12 +385,12 @@ protected void convertStateflow() throws FileNotFoundException, SimulinkModelBui
 	{
 		// Alessio Palmieri: change this code to manage temp directory
 		WorkingTemp wrk = WorkingTemp.getInstance();
-		File output_file = new File(wrk.createNewWorkingTemp(),main_view.getModelName() + "_log.txt");
+		File output_file = new File(wrk.createNewWorkingTemp(),"nusmvlog_" + main_view.getModelName() + ".txt");
  		output_file.setWritable(true);
  		
  		if(runNuSMV(output_file))
  		{
- 			QDialog dialog = new ResultDialog(null);
+ 			QDialog dialog = new ResultDialog(main_view);
  			dialog.show();
  		}
 	}

@@ -20,6 +20,7 @@ public class WorkingTemp {
 	private static final FilenameFilter LTLFilter			= new PrefixFilenameFilter("check_ltlspec_");
 	private static final FilenameFilter SimulationFilter 	= new PrefixFilenameFilter("simulation.xml");
 	private static final FilenameFilter ShowVarFilter 		= new PrefixFilenameFilter("show_vars.txt");
+	private static final FilenameFilter logs				= new PrefixFilenameFilter("nusmvlog_");
 	
 	
 	/**
@@ -118,6 +119,10 @@ public class WorkingTemp {
 	
 	public String[] getShowVars() throws IOException{
 		return getCurrentContent(ShowVarFilter);
+	}
+	
+	public String[] getLogFile() throws IOException {
+		return getCurrentContent(logs); 
 	}
 	
 

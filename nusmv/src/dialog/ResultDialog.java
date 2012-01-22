@@ -16,6 +16,8 @@ import util.WorkingTemp;
 import view.FrameModuleWindowView;
 import widget.TraceWidget;
 
+import apps.Icon;
+
 import com.trolltech.qt.core.QSignalMapper;
 import com.trolltech.qt.gui.QDialog;
 import com.trolltech.qt.gui.QGridLayout;
@@ -34,8 +36,10 @@ import com.trolltech.qt.gui.QVBoxLayout;
 public class ResultDialog extends QDialog {
 	private WorkingTemp wrk = WorkingTemp.getInstance();
 	private QSignalMapper mapper = new QSignalMapper();
+	private FrameModuleWindowView main;
 	
 	public ResultDialog(FrameModuleWindowView main){
+		this.main = main;
 		mapper = new QSignalMapper(this);
 		mapper.mappedString.connect(this,"openDesktop(String)");
 		createLayout();
@@ -126,7 +130,8 @@ public class ResultDialog extends QDialog {
 				in.close();
 				String labelTxt = sb.toString();
 				QLabel label = new QLabel(header==null?labelTxt:header);
-				button = new QPushButton("show counter example");
+				button = new QPushButton(Icon.magnifier(),"view");
+				button.setMaximumSize(80, 40);
 				button.setDisabled(!buttonEnable);
 				button.clicked.connect(mapper, "map()");
 				mapper.setMapping(button, fileName);
@@ -182,6 +187,10 @@ public class ResultDialog extends QDialog {
 		return ret;
 	}
 	
+	private QGroupBox createLog(){
+		return	 createTextView("nusmvlog_"+main.getModelName()+".txt", "logfile");
+	}
+	
 	private void createLayout(){
 		// check the content of the temp dir.
 		// create a tabforeach file
@@ -219,6 +228,12 @@ public class ResultDialog extends QDialog {
 			vbox.addWidget(gb);
 		}
 		
+		gb = createLog();
+		if (gb!=null) {
+			vbox.addWidget(gb);
+		}
+		
+		
 		setLayout(vbox);
 	}
 	
@@ -227,11 +242,12 @@ public class ResultDialog extends QDialog {
 		if (filename.startsWith("check_ctlspec") || filename.startsWith("check_ltlspec")) {
 			// clicked on the verification
 			System.out.println("show counter example");
-			TraceDialog td = new TraceDialog(this, wrk.getCurrentPath()+"/"+filename);
+			TraceDialog td = new TraceDialog(this, main, wrk.getCurrentPath()+"/"+filename);
 			td.show();
 		} else {
 			if (filename.equals("simulation.xml")) {
 				System.out.println("show simulation");
+				TraceDialog td = new TraceDialog(this, main, wrk.getCurrentPath()+"/simulation.xml");
 			} else {
 				if (Desktop.isDesktopSupported()){
 					Desktop.getDesktop().open(new File(wrk.getCurrentPath()+"/"+filename));
